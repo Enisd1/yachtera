@@ -10,7 +10,7 @@ body {
 .info-bar {
     display: flex;
     justify-content: space-between;
-    background-color: blue;
+    background-color: #183170;
     color: white;
     padding: 10px;
     text-align: center;
@@ -81,7 +81,7 @@ body {
 
 .breadcrumb {
     height: 400px;
-    background-color: blue;
+    background-color: #183170;
     color: white;
     display: flex;
     flex-direction: column;
@@ -281,90 +281,164 @@ hr {
     justify-content: space-between;
 }
 
-
-.footer {
-    background-color: #333; /* Light black background */
-    color: white; /* Text color */
-    padding: 20px; /* Padding for the footer */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-.footer-main {
+.footerContainer{
+    background-color: rgb(11, 9, 9);
+    height: 300px;
+    width: 100%;
     display: flex;
-    justify-content: space-between; /* Space between the left and right divs */
-    padding: 50px 120px;
-}
-
-.footer-left {
-    width: 50%;
-    /*max-width: 300px; !* Limit width of the left section *!*/
-}
-
-.footer-left p{
-    width: 70%;
-    margin-bottom: 40px;
-}
-.footer-title {
-    margin-bottom: 40px;
-}
-.footer-right {
-    display: flex;
-    justify-content: space-between; /* Space between columns */
-    width: 50%;
-    /*flex: 1; !* Allow this section to take up remaining space *!*/
-}
-
-.footer-column {
-    flex: 1; /* Equal width for each column */
-    margin: 0 15px; /* Spacing between columns */
-}
-
-.footer-column h4 {
-    margin-bottom: 10px; /* Spacing below the heading */
-}
-
-.footer-column ul {
-    list-style: none; /* Remove default list styling */
-    padding: 0; /* Remove padding */
-}
-
-.footer-column li {
-    margin-bottom: 5px; /* Spacing between list items */
-}
-
-.footer-column a {
-    color: white; /* Link color */
-    text-decoration: none; /* Remove underline */
-    font-size: 12px;
-}
-
-.footer-column a:hover {
-    text-decoration: underline; /* Underline on hover */
-}
-
-.chat-button {
-    background-color: #0066cc; /* Button color */
-    color: white; /* Text color */
-    border: none; /* Remove border */
-    padding: 10px 15px; /* Button padding */
-    cursor: pointer; /* Pointer cursor on hover */
-    border-radius: 5px; /* Rounded corners */
-}
-
-.chat-button i {
-    margin-right: 5px; /* Spacing between icon and text */
-}
-
-.footer-divider {
-    height: 1px;
-    width: 85%;
-    margin: 0 auto;
-    background-color: #A9A9A9; /* Color of the line */
-    border: none; /* Remove default border */
-}
-
-.copyright {
-    padding: 20px 120px;
-    padding-bottom: 10px;
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    font-size: 10px;
 }
+
+.footerLeftSide{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 30px;
+    margin-left: 150px;
+    margin-top: 60px;
+}
+
+.footerButton{
+    background-color: rgb(56, 56, 229);
+    width: 200px;
+    height: 60px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.footerLeftSide p{
+    width: 80%;
+    line-height: 20px;
+    color: rgb(165, 164, 164);
+    font-size: 1.8em;
+}
+
+.footerLeftSide h2{
+    letter-spacing: 7px;
+}
+
+.footerRightSideContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.footerRightSide{
+    display: flex;
+    flex-direction: column;
+    color: rgb(165, 164, 164);
+    gap:20px;
+    font-size: 1.8em;
+}
+
+.footerTitle{
+    font-size: 1.5em;
+    color:white;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.footerBottomPart{
+    background-color: rgb(11, 9, 9);
+    height: 100px;
+    padding-top: 25px;
+    width: 100%;
+    font-size: 10px;
+}
+
+hr{
+    background-color: rgb(3, 9, 93);
+    border: none;
+    height: 1px;
+    margin-left: 140px;
+    width: 85%;
+}
+
+.footerText{
+    display: flex;
+    flex-direction: row;
+}
+
+.footerTextp{
+    font-size: 1.8em;
+    color: white;
+    display: flex;
+    justify-content: start;
+    margin-left: 150px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.footerTextp2{
+    font-size: 1.8em;
+    color: white;
+    display: flex;
+    justify-content: end;
+    margin-right: 60px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+@media screen and (max-width:500px){
+    .footerContainer{
+        flex-direction: column;
+        font-size: 8px;
+    }
+
+    .footerLeftSide{
+        margin-left: 0;
+        margin: 0;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footerLeftSide h2{
+        padding-top: 40px;
+    }
+
+    .footerRightSideContainer{
+        gap: 35px;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .footerTitle{
+        font-size: 18px;
+    }
+
+    .footerRightSide{
+        gap: 5px;
+    }
+
+    .footerButton{
+        width: 150px;
+        height: 30px;
+    }
+
+    .footerBottomPart{
+        font-size: 7px;
+    }
+
+    .footerTextp{
+        margin-left: 30px;
+    }
+    
+    hr{
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+}
+

@@ -1,0 +1,119 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+
+}
+
+.container {
+    width: 400px; /* Gjerësia e kutisë */
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #e7f3ff; /* Ngjyra e sf
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center; /* Vendos tekstin në qendër */
+    color: #333;
+    font-weight: bold; /* Bëj tekstin bold */
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.create-account {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff; /* Ngjyra e kaltër */
+    color: white;
+    border: none;
+    border-radius: 5px; /* Rrethimi i skajeve */
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold; 
+}
+
+.create-account:hover {
+    background-color: #0056b3; /* Ngjyra më e errët e kaltër */
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.login-link a {
+    color: #007bff; /* Ngjyra e kaltër */
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+.connect-with {
+    text-align: center;
+    margin: 20px 0;
+    color: #333;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.divider span {
+    flex: 1;
+    height: 1px;
+    background-color: #ccc; /* Ngjyra e viza anash */
+    margin: 0 10px; /* Hapësira midis viza dhe tekstit */
+}
+
+.social-login {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin: 5px; /* Hapësira midis butonave */
+}
+
+.google {
+    background-color: #db4437; /* Google Red */
+}
+
+.facebook {
+    background-color: #4267B2; /* Facebook Blue */
+}
+
+.social-icon {
+    width: 20px; /* Gjatësia e logove */
+    height: 20px; /* Lartësia e logove */
+    margin-right: 10px; /* Hapësira midis logos dhe tekstit */
+}
