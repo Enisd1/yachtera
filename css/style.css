@@ -1,0 +1,370 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.social-media {
+    display: flex;
+}
+
+.info-bar {
+    display: flex;
+    justify-content: space-between;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.info-item {
+    display: inline-block;
+    margin: 0 25px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px 20px;
+    height: 100px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    height: 80px; /* Adjust as needed */
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.book-now {
+    height: 50px; /* Adjust for desired height */
+    width: 120px; /* Adjust for desired width */
+    background-color: blue; /* Change button color as needed */
+    color: white;
+    border: none;
+    border-radius: 25px; /* Rounded corners */
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.book-now:hover {
+    background-color: darkblue; /* Darker shade on hover */
+}
+
+
+.breadcrumb {
+    height: 400px;
+    background-color: blue;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.breadcrumb h1 {
+    font-size: 48px; /* Adjust font size as needed */
+    margin: 0;
+}
+
+.breadcrumb p {
+    margin: 10px 0 0;
+    font-size: 14px;
+}
+
+.breadcrumb a {
+    color: white;
+    text-decoration: none;
+}
+
+.breadcrumb .current-page {
+    color: yellow; /* Highlight current page */
+    font-weight: bold;
+}
+
+.get-in-touch {
+    display: flex;
+    padding: 100px 120px;
+}
+
+.contact-details {
+    flex: 1;
+    margin-right: 20px; /* Space between sections */
+}
+
+.contact-details p{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px; /* Space between sections */
+}
+
+.contact-details h1 {
+    font-size: 60px;
+    margin: 20px 0px;
+    font-weight: normal;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.info-section {
+    margin-right: 40px; /* Space between info sections */
+}
+
+.info-section h2 {
+    margin: 0 0 10px;
+    color: blue; /* Heading color */
+}
+
+.contact-inputs {
+    flex: 1;
+}
+
+.name-inputs, .contact-data {
+    display: flex;
+}
+
+.input-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.input-row label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-row input, .input-row textarea {
+    padding: 15px;
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box; /* Ensures padding is included in width */
+}
+
+.input-row textarea {
+    width: 70%; /* Adjust width for the textarea */
+    resize: vertical; /* Allow vertical resizing */
+}
+
+.send-message {
+    padding: 10px 15px;
+    background-color: blue; /* Button color */
+    color: white;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.send-message:hover {
+    background-color: darkblue; /* Darker shade on hover */
+}
+
+
+.container {
+    display: flex;
+    background-color: #f4f4f4;
+    padding: 50px 120px;
+    /*width: 600px;*/
+    margin: 0px auto;
+}
+
+.visit-office {
+    width: 60%;
+    padding: 20px;
+}
+
+.business-hours {
+    background-color: blue;
+    color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-left: 20px;
+    width: 40%;
+}
+.working-days {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 30px;
+}
+
+.container h2 {
+    margin: 0;
+    padding: 20px 30px 0 30px;
+}
+
+.container p {
+    margin: 10px 0;
+}
+
+.get-direction-button {
+    padding: 10px 15px;
+    background-color: blue; /* Button color */
+    color: white;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.get-direction-button:hover {
+    background-color: darkblue; /* Darker shade on hover */
+}
+
+hr {
+    border: 1px solid white;
+    margin: 10px 0;
+}
+
+.faq-questions-sec {
+    display: flex;
+    padding: 50px 120px;
+}
+.faq-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.faq-divider {
+    margin: 20px 0;
+    height: 1px;
+    width: 70px;
+    background-color: #ccc; /* Color of the line */
+    border: none; /* Remove default border */
+}
+
+.faq-list {
+    width: 70%;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.footer {
+    background-color: #333; /* Light black background */
+    color: white; /* Text color */
+    padding: 20px; /* Padding for the footer */
+}
+
+.footer-main {
+    display: flex;
+    justify-content: space-between; /* Space between the left and right divs */
+    padding: 50px 120px;
+}
+
+.footer-left {
+    width: 50%;
+    /*max-width: 300px; !* Limit width of the left section *!*/
+}
+
+.footer-left p{
+    width: 70%;
+    margin-bottom: 40px;
+}
+.footer-title {
+    margin-bottom: 40px;
+}
+.footer-right {
+    display: flex;
+    justify-content: space-between; /* Space between columns */
+    width: 50%;
+    /*flex: 1; !* Allow this section to take up remaining space *!*/
+}
+
+.footer-column {
+    flex: 1; /* Equal width for each column */
+    margin: 0 15px; /* Spacing between columns */
+}
+
+.footer-column h4 {
+    margin-bottom: 10px; /* Spacing below the heading */
+}
+
+.footer-column ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+}
+
+.footer-column li {
+    margin-bottom: 5px; /* Spacing between list items */
+}
+
+.footer-column a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-size: 12px;
+}
+
+.footer-column a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.chat-button {
+    background-color: #0066cc; /* Button color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    padding: 10px 15px; /* Button padding */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.chat-button i {
+    margin-right: 5px; /* Spacing between icon and text */
+}
+
+.footer-divider {
+    height: 1px;
+    width: 85%;
+    margin: 0 auto;
+    background-color: #A9A9A9; /* Color of the line */
+    border: none; /* Remove default border */
+}
+
+.copyright {
+    padding: 20px 120px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
